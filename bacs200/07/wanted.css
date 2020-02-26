@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+}
+
+header {
+    border: solid 3px rosybrown;
+    background-color: floralwhite;
+    text-align: center;
+    font-family: Lucida Console;
+    border-radius: 25px;
+    width: 1000px;
+    margin: auto;
+
+}
+
+main {
+    border: solid 3px rosybrown;
+    background-color: lightgoldenrodyellow;
+    font-family: Lucida Console;
+    border-radius: 25px;
+    width: 1000px;
+    margin: auto
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+aside {
+    background-color: floralwhite;
+    border: solid 2px;
+    margin: 250px;
+
+}
