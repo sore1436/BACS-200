@@ -6,9 +6,9 @@ header {
     border: solid 3px rosybrown;
     background-color: floralwhite;
     text-align: center;
-    font-family: Lucida Console;
+    font-family: Cursive, Lucida Console;
     border-radius: 25px;
-    width: 1000px;
+    width: 900px;
     margin: auto;
 
 }
@@ -16,21 +16,23 @@ header {
 main {
     border: solid 3px rosybrown;
     background-color: lightgoldenrodyellow;
-    font-family: Lucida Console;
+    font-family: Cursive, Lucida Console;
     border-radius: 25px;
-    width: 1000px;
-    margin: auto
+    width: 900px;
+    margin: auto;
+    margin-top: 25px;
+
 }
 
 h1 {
     font-size: 50px;
-    font-weight: bold;
+    padding: 1px;
     text-align: center;
 }
 
 aside {
     background-color: floralwhite;
     border: solid 2px;
-    margin: 250px;
-
+    padding-right: 300px;
+    float: right
 }
