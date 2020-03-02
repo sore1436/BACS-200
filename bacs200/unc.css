@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+    background-color: gainsboro
+}
+
+
+h1 {
+    margin: 20px;
+    padding: 30px;
+    color: whitesmoke;
+    background-color: rebeccapurple;
+    border: 5px solid black;
+    text-align: center;
+    box-shadow: 2px 2px 5px gray;
+}
+
+h2 {
+    color: black;
+    background-color: darkgrey;
+    border: 2px solid purple;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+
+header {
+    border: 5px solid black;
+    background-color: rebeccapurple;
+    padding: 1.5em;
+}
+
+
+
+header h1 {
+    color: whitesmoke;
+    border: inset grey;
+    padding: 0;
+    margin: 20px 0;
+    box-shadow: none;
+    text-align: right;
+}
+
+
+header img {
+    float: left;
+}
+
+
+
+img {
+    max-width: 100px;
+    border: 1px solid white;
+}
+
+li {
+    margin: 5px 1.5em;
+}
+
+p {
+    margin: 0.5em 3em;
+
+}
