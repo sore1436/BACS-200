@@ -64,3 +64,13 @@ p {
     margin: 0.5em 3em;
 
 }
+
+body img {
+    margin: auto;
+    display: block;
+}
+
+body iframe {
+    margin: auto;
+    display: block;
+}
