@@ -35,15 +35,6 @@ header {
 
 
 
-header h1 {
-    color: whitesmoke;
-    border: inset grey;
-    padding: 0;
-    margin: 20px 0;
-    box-shadow: none;
-    text-align: right;
-}
-
 
 header img {
     float: left;
