@@ -1,1 +1,1 @@
-# BACS-200
+My plan for part one of my prject is to create a hub for all my favorite categories of memes. There'll be a main home, but them a menu that goes to each category. Some of the categories I plan on using are like online learning, dungeons and dragons, and UNC. I need to focus on making a clean layout for the pictures and making the navigation easy.
