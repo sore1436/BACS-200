@@ -1,4 +1,12 @@
 <html>
+<title>UNC MEMES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>
 
 <head>
     <style>
@@ -33,6 +41,7 @@
         }
     </style>
 </head>
+<h1>University of Northern Colorado Memes</h1>
 <nav id="main-menu">
     <link rel="stylesheet" href="menu.css">
     <ul>
@@ -43,52 +52,44 @@
         <li><a href="musical.html">Musical Theatre</a></li>
     </ul>
 </nav>
-<h1>University of Northern Colorado Memes</h1>
 
 <body>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="images/unc/one.jpg" style="width:100%">
+        <img class="mySlides" src="images/unc/two.jpg" style="width:100%">
+        <img class="mySlides" src="images/unc/three.jpg" style="width:100%">
+        <img class="mySlides" src="images/unc/four.jpg" style="width:100%">
+        <img class="mySlides" src="images/unc/five.jpg" style="width:100%">
+        <img class="mySlides" src="images/unc/six.jpg" style="width:100%">
+        <img class="mySlides" src="images/unc/seven.jpg" style="width:100%">
 
-    <div class="gallery">
-        <a target="_blank" href="images/unc/one.jpg">
-            <img src="images/unc/one.jpg" alt="one" width="600" height="400">
-        </a>
-
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
     </div>
 
-    <div class="gallery">
-        <a target="_blank" href="images/unc/two.jpg">
-            <img src="images/unc/two.jpg" alt="two" width="600" height="400">
-        </a>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-    </div>
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
 
-    <div class="gallery">
-        <a target="_blank" href="images/unc/three.jpg">
-            <img src="images/unc/three.jpg" alt="three" width="600" height="400">
-        </a>
-    </div>
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
 
-    <div class="gallery">
-        <a target="_blank" href="images/unc/four.jpg">
-            <img src="images/unc/four.jpg" alt="four" width="600" height="400">
-        </a>
 
-    </div>
-    <div class="gallery">
-        <a target="_blank" href="images/unc/five.jpg">
-            <img src="images/unc/five.jpg" alt="five" width="600" height="400">
-        </a>
-
-    </div>
-    <div class="gallery">
-        <a target="_blank" href="images/unc/six.jpg">
-            <img src="images/unc/six.jpg" alt="six" width="600" height="400">
-        </a>
-
-    </div>
-    <div class="gallery">
-        <a target="_blank" href="images/unc/seven.jpg">
-            <img src="images/unc/seven.jpg" alt="six" width="600" height="400">
-        </a>
-
-    </div>
 </body></html>
