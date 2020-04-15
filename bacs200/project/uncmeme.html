@@ -2,13 +2,9 @@
 <title>UNC MEMES</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-    .mySlides {
-        display: none;
-    }
-</style>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         html {
             background-color: navy
@@ -17,6 +13,10 @@
         h1 {
             color: gold;
             text-align: center;
+        }
+
+        h2 {
+            color: gold;
         }
 
         div.gallery {
@@ -39,6 +39,64 @@
             padding: 15px;
             text-align: center;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .column img:hover {
+            opacity: 1;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container */
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Closable button inside the expanded image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <h1>University of Northern Colorado Memes</h1>
@@ -54,42 +112,41 @@
 </nav>
 
 <body>
-    <div class="w3-content w3-display-container">
-        <img class="mySlides" src="images/unc/one.jpg" style="width:100%">
-        <img class="mySlides" src="images/unc/two.jpg" style="width:100%">
-        <img class="mySlides" src="images/unc/three.jpg" style="width:100%">
-        <img class="mySlides" src="images/unc/four.jpg" style="width:100%">
-        <img class="mySlides" src="images/unc/five.jpg" style="width:100%">
-        <img class="mySlides" src="images/unc/six.jpg" style="width:100%">
-        <img class="mySlides" src="images/unc/seven.jpg" style="width:100%">
 
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <div style="text-align:center">
+        <h2>Want a Closer Look? Click a Meme!</h2>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row">
+        <div class="column">
+            <img src="images/unc/one.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/unc/three.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/unc/six.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="images/unc/seven.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
     </div>
 
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = x.length
-            }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
         }
     </script>
-
 
 </body></html>
