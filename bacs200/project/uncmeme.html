@@ -97,7 +97,22 @@
             font-size: 35px;
             cursor: pointer;
         }
+
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164087123-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164087123-1');
+
+    </script>
+
 </head>
 <h1>University of Northern Colorado Memes</h1>
 <nav id="main-menu">
@@ -120,16 +135,16 @@
     <!-- The four columns -->
     <div class="row">
         <div class="column">
-            <img src="images/unc/one.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+            <img src="images/unc/one.jpg" alt="One" style="width:100%" onclick="myFunction(this);">
         </div>
         <div class="column">
-            <img src="images/unc/three.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            <img src="images/unc/three.jpg" alt="Two" style="width:100%" onclick="myFunction(this);">
         </div>
         <div class="column">
-            <img src="images/unc/six.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            <img src="images/unc/six.jpg" alt="Three" style="width:100%" onclick="myFunction(this);">
         </div>
         <div class="column">
-            <img src="images/unc/seven.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            <img src="images/unc/seven.jpg" alt="Four" style="width:100%" onclick="myFunction(this);">
         </div>
     </div>
 
@@ -147,6 +162,9 @@
             imgText.innerHTML = imgs.alt;
             expandImg.parentElement.style.display = "block";
         }
+
     </script>
 
-</body></html>
+</body>
+
+</html>
